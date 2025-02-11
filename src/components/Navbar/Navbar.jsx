@@ -11,10 +11,13 @@ const Navbar = () => {
             <a className="menu-item">Sobre</a>
           </li>
           <li>
+            <a className="menu-item">Habilidades</a>
+          </li>
+          <li>
             <a className="menu-item">Projetos</a>
           </li>
           <li>
-            <a className="menu-item">Habilidades</a>
+            <a className="menu-item">Currículo</a>
           </li>
 
           <button className="contact-btn" onClick={() => {}}>

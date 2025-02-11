@@ -7,7 +7,6 @@ const Hero = () => {
     <section className="hero-container">
       <div className="hero-content">
         <h2><MaquinaDeEscrever text="Front End Developer">
-
         </MaquinaDeEscrever></h2>
         <p>Creating Websites with Pixel</p>
       </div>

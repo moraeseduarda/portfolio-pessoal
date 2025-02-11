@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Diretórios do editor e arquivos
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -39,7 +39,6 @@ dist/
 
 # Cache do Vite
 .vite/
-
 
 # Arquivos do sistema operacional
 .DS_Store
