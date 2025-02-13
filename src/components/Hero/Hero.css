@@ -3,25 +3,131 @@
 }
 
 .hero-container {
+  height: calc(100vh - 7rem);
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
+  flex-wrap: wrap;
+}
+
+.hero-container::before,
+.hero-container::after {
+  content: "";
+  width: 28.125rem;
+  height: 28.125rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: 0;
+  filter: blur(225px);
+}
+
+.hero-container::before {
+  top: -50px;
+  left: -50px;
+}
+
+.hero-container::after {
+  bottom: -50px;
+  right: -50px;
 }
 
 .hero-content {
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
+
 
 .hero-content h2 {
   font-size: 3.8rem;
-  font-size: 600;
   line-height: 5rem;
   margin-bottom: 1rem;
+  /* color: red; */
+  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-content p {
   width: 80%;
-  font-size: 1rem;
-  font-size: 400;
+  font-size: 1.5rem;
   line-height: 2rem;
+  padding-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-links a:hover {
+  transform: scale(1.25);
+}
+
+
+.hero-img-container {
+  display: block;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-style: 3rem;
+  }
+
+  .hero-content h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .contact-btn {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
 }
