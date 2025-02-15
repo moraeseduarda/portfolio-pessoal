@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-
-export function MaquinaDeEscrever(props) {
+export function WritingEffect(props) {
   const [text, setText] = useState("");
   const [mostrarCursor, setMostrarCursor] = useState(true);
   const [restart, setRestart] = useState(false);

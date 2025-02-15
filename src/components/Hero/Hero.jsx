@@ -1,34 +1,34 @@
 import "./Hero.css"
-import { MaquinaDeEscrever } from "../MaquinaDeEscrever";
+import { WritingEffect } from "../WritingEffect/WritingEffect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import HeroImage from '../../img/hero-img.jpg'
 
 const Hero = () => {
   return (
-    <section className="hero-container" id="hero">
-      <div className="hero-content">
-        <h1>EDUARDA MORAES</h1>
+    <section className="hero" id="hero">
+      <div className="hero__content">
+        <h1 className="hero__logo">EDUARDA MORAES</h1>
         <div>
-          {/* <h2><MaquinaDeEscrever text="Front-End Developer"></MaquinaDeEscrever></h2> */}
-          <h2>Front-End Developer</h2>
+          {/* <h2><WritingEffect text="Front-End Developer"></WritingEffect></h2> */}
+          <h2 className="hero__subtitle">Front-End Developer</h2>
         </div>
-        <p>Creating Websites with Pixel</p>
-        <div className="social-links">
-          <a href="https://www.linkedin.com/in/eduardamoraesdossantos/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        <p className="hero__description">Creating Websites with Pixel</p>
+        <div className="hero__social-links">
+          <a className="hero__social-link" href="https://www.linkedin.com/in/eduardamoraesdossantos/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" style={{ color: 'white' }} />
           </a>
-          <a href="https://github.com/moraeseduarda" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
+          <a className="hero__social-link" href="https://github.com/moraeseduarda" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'white' }} />
           </a>
         </div>
       </div>
 
-      <div className="hero-img-container">
-        <div>
-          <img className="hero-img" src="src\img\hero-img.jpg"></img>
+      <div className="hero__image-container">
+        <div className="hero__image-wrapper">
+          <img className="hero__image" src={HeroImage} alt="Hero"></img>
         </div>
       </div>
-      
     </section>
   )
 }

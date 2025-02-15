@@ -1,22 +1,14 @@
-.skills-section {
+.skills {
   display: flex;
   padding: 149.33px 85.33px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 106.667px;
+  color: #fff;
 }
 
-.skills-section-heading {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 77px;
-  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.skills-section-container {
+.skills__container {
   display: grid;
   justify-content: center;
   align-items: flex-start;
@@ -24,7 +16,7 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.skills-section-card {
+.skills__card {
   display: flex;
   padding: 32px;
   flex-direction: column;
@@ -37,66 +29,66 @@
   transition: border-bottom 0.3s ease-in-out;
 }
 
-.skills-section-card:hover {
+.skills__card:hover {
   border-bottom: 4px solid var(--primary);
 }
 
-.skills-section-title {
+.skills__title {
   color: var(--primary);
 }
 
 @media (max-width: 1024px) {
-  .skills-section-heading {
+  .skills__heading {
     font-size: 48px;
     line-height: 60px;
   }
 
-  .skills-section-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .skills-section-card {
+  .skills__card {
     padding: 24px;
   }
 }
 
 @media (max-width: 768px) {
   .skills-section {
-    padding: 80px 20px; /* Reduce padding on smaller screens */
-    gap: 50px; /* Adjust gap for smaller screens */
+    padding: 80px 20px;
+    gap: 50px;
   }
 
-  .skills-section-heading {
+  .skills__heading {
     font-size: 40px;
     line-height: 50px;
   }
 
-  .skills-section-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .skills-section-card {
+  .skills__card {
     padding: 20px;
     min-height: 200px;
   }
 }
 
 @media (max-width: 480px) {
-  .skills-section-heading {
+  .skills__heading {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .skills-section-container {
-    grid-template-columns: 1fr; /* 1 column on very small screens */
+  .skills__container {
+    grid-template-columns: 1fr;
   }
 
-  .skills-section-card {
+  .skills__card {
     padding: 16px;
     min-height: 180px;
   }
 
-  .skills-section-title {
+  .skills__title {
     font-size: 1.2re
   }
 }

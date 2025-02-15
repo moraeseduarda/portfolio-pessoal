@@ -2,49 +2,50 @@ import './Navbar.css'
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+    const scrollToContact = () => {
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+
   return (
-    <nav className="main-nav">
-      <div className="nav-content">
-        <div className="logo">
-          <Link to="hero" smooth={true} duration={500} className="menu-item">
+    <nav className="navbar">
+      <div className="navbar__content">
+        <div className="navbar__logo">
+          <Link to="#" smooth={true} duration={500} className="navbar__menu-item">
             Eduarda
           </Link>
         </div>
         <ul>
             <li>
-              <Link to="aboutme" smooth={true} duration={500} className="menu-item">
-                Sobre
+              <Link to="about-me" smooth={true} duration={500} className="navbar__menu-item">
+                About
               </Link>
             </li>
             <li>
-              <Link to="skills" smooth={true} duration={500} className="menu-item">
-                Habilidades
+              <Link to="skills" smooth={true} duration={500} className="navbar__menu-item">
+                Skills
               </Link>
             </li>
             <li>
-              <Link to="projects" smooth={true} duration={500} className="menu-item">
-                Projetos
+              <Link to="projects" smooth={true} duration={500} offset={-80} className="navbar__menu-item">
+                Projects
               </Link>
             </li>
             <li>
-              <Link to="cv" smooth={true} duration={500} className="menu-item">
-                Currículo
+              <Link to="works" smooth={true} duration={500} offset={-80} className="navbar__menu-item">
+                Work Experience
               </Link>
             </li>
 
-          <button className="contact-btn" onClick={() => {}}>
-            Contato
-          </button>
-
-
-
+          <button className="navbar__contact-btn" onClick={scrollToContact}>
+                Contact Me
+              </button>
+          
         </ul>
-        <button className="menu-btn" onClick={() => {}}>
-            <span
-            class={"material-symbols-outlined"}
-            style={{ fontSize: "1.8rem" }}
-            >
-              menu
+        <button className="navbar__menu-btn" onClick={() => {}}>
+            <span class={"material-symbols-outlined"} style={{ fontSize: "1.8rem" }}> menu
             </span>
           </button>
       </div>

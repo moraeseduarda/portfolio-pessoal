@@ -11,6 +11,18 @@
 
 body {
   background-color: #000;
-  /* background-color: var(--bg-shade); */
+}
+
+.subtitle {
+  font-size: 25px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 

@@ -12,21 +12,21 @@ const iconMap = {
 
 const Skills = () => {
   return (
-    <section className="skills-section" id="skills">
-      <div className="portfolio-container">
-        <p className="section-title">Em desenvolvimento</p>
-        <h2 className="skills-section-heading">Habilidades</h2>
+    <section className="skills" id="skills">
+      <div className="skills__header">
+        <p className="subtitle">In development</p>
+        <h2 className="title">Skills</h2>
       </div>
-      <div className="skills-section-container">
+      <div className="skills__container">
         {data?.skills?.map((item, index) => (
           <div key={index}
-          className="skills-section-card">
-            <div className="skills-section-img">
+          className="skills__card">
+            <div className="skills__icon">
               <FontAwesomeIcon icon={iconMap[item.icon]} size="3x" style={{ color: item.color }} />
             </div>
-            <div className="skills-section-card-content">
-              <h3 className="skills-section-title">{item.title}</h3>
-              <p className="skills-section-description">{item.description}</p>
+            <div className="skills__card-content">
+              <h3 className="skills__title">{item.title}</h3>
+              <p className="skills__description">{item.description}</p>
             </div>
           </div>
         ))}
