@@ -1,5 +1,5 @@
 import './Skills.css';
-import skillsData from "../../data/skillsData.json";
+import data from "../../data/data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faCss3, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
