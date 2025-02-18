@@ -33,7 +33,7 @@ const Skills = () => {
         <h2 className="title">Skills</h2>
       </div>
       <div className="skills__container">
-        {skillsData?.skills?.map((item, index) => (
+        {data?.skills?.map((item, index) => (
           <div key={index}
           className="skills__card">
             <div className="skills__icon">
