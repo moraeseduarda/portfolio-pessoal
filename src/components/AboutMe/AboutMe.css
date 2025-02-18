@@ -1,13 +1,3 @@
-.about-me {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  padding: 20px;
-}
-
 .about-me__image {
   height: 200px;
   width: 200px;
@@ -37,7 +27,6 @@
 
 .about-me__bio-text {
   font-size: 16px;
-  color: #ccc;
 }
 
 @media (max-width: 768px) {
@@ -96,4 +85,49 @@
   .about-info__description p {
     font-size: 12px;
   }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-shade);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px;
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stats__item:hover {
+  transform: translateY(-5px);
+}
+
+.stats__icon {
+  font-size: 40px;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.stats__number {
+  font-size: 28px;
+  font-weight: bold;
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats__text {
+  font-size: 16px;
+  color: #e0e0e0;
 }

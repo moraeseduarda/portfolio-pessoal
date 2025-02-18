@@ -1,55 +1,20 @@
 .hero {
-  height: calc(100vh - 7rem);
+  height: calc(100vh - 4rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  flex-wrap: wrap;
-  color: #fff;
-}
-
-.hero::before,
-.hero::after {
-  content: "";
-  width: 28.125rem;
-  height: 28.125rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  position: absolute;
-  z-index: 0;
-  filter: blur(225px);
-}
-
-.hero::before {
-  top: -50px;
-  left: -50px;
-}
-
-.hero::after {
-  bottom: -50px;
-  right: -50px;
 }
 
 .hero__content {
-  flex: 1;
-  position: relative;
-  z-index: 1;
-}
-
-.hero__subtitle {
-  font-size: 3.8rem;
-  line-height: 5rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__description {
-  width: 80%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2rem;
-  padding-bottom: 10px;
 }
 
 .hero__social-links {
@@ -59,62 +24,16 @@
   margin-top: 20px;
 }
 
-.hero__social-links a:hover {
+.hero__social-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero__social-link:hover {
   transform: scale(1.25);
 }
 
-.hero__image-container {
-  display: block;
-}
-
-.hero__image {
-  width: 100%;
-  height: auto;
-  border-radius: 40px;
-}
-
-@media (max-width: 1024px) {
-  .hero {
-    flex-direction: column;
-    padding-top: 10rem;
-  }
-
-  .hero__image {
-    display: none;
-  }
-
-  .hero__logo {
-    font-style: 3rem;
-  }
-
-  .hero__subtitle {
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
+@media (max-width: 425px) {
   .hero__description {
-    font-size: 2rem;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero__subtitle {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero__subtitle {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  .hero__description {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }

@@ -1,11 +1,5 @@
 .skills {
-  display: flex;
-  padding: 149.33px 85.33px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 106.667px;
-  color: #fff;
+  gap: 50px;
 }
 
 .skills__container {
@@ -25,16 +19,12 @@
   flex: 1 0 0;
   border-radius: 10.6px;
   background: var(--bg-shade);
-  min-height: 250px;
-  transition: border-bottom 0.3s ease-in-out;
+  min-height: 200px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .skills__card:hover {
-  border-bottom: 4px solid var(--primary);
-}
-
-.skills__title {
-  color: var(--primary);
+  transform: translateY(-10px);
 }
 
 @media (max-width: 1024px) {

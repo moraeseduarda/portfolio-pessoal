@@ -1,12 +1,14 @@
 .navbar {
-  background-color: #000;
-  color: #efedde;
+  width: 100%;
+  color: var(--text-color);
   font-weight: 500;
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(100px);
+  background: rgba(0, 0, 0, 0.8);
+  overflow: visible;
 }
 
 .navbar__content {
@@ -22,6 +24,12 @@
   width: 12rem;
   height: auto;
   cursor: pointer;
+  color: var(--secondary);
+}
+
+.navbar__logo--item {
+  width: 30px;
+  height: 30px;
 }
 
 .navbar__content ul {
@@ -39,13 +47,14 @@
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  color: var(--text-color);
 }
 
 .navbar__menu-item::before {
   content: "";
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
+  background: var(--gradient-color);
   border-radius: 5px;
   position: absolute;
   bottom: -5px;
@@ -60,8 +69,8 @@
 }
 
 .navbar__contact-btn {
-  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
-  color: #fff;
+  background: var(--gradient-color);
+  color: var(--text-color);
   display: inline-block;
   padding: 10px 32px;
   font-size: 16px;
@@ -78,8 +87,8 @@
 
 .navbar__contact-btn:hover {
   background: #000;
-  color: #ff0000;
-  outline: 1.5px solid #ff0000;
+  color: var(--primary);
+  outline: 1.5px solid var(--primary);
 }
 
 .navbar__menu-btn {
@@ -91,8 +100,8 @@
   justify-content: center;
   border: none;
   border-radius: 0.4rem;
-  color: #fff;
-  background: linear-gradient(90deg, #ff0000 0%, #ff007f 100%);
+  color: var(--text-color);
+  background: var(--gradient-color);
   line-height: 0;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -100,9 +109,9 @@
 }
 
 .navbar__menu-btn:hover {
-  color: #ff0000 ;
+  color: var(--primary);
   background: #000;
-  border: 1px solid #ff0000 ;
+  border: 1px solid var(--primary) ;
 }
 
 @media (max-width: 1325px) {

@@ -1,9 +1,9 @@
 .footer {
   font-size: 1rem;
   text-align: center;
-  background: linear-gradient(90deg, #880000 0%, #FF1493 100%);
   padding: 1rem;
   font-weight: 600;
   width: 100%;
-  color: #fff;
+  color: var(--text-color);
+  background-color: var(--bg-shade);
 }

@@ -1,7 +1,8 @@
-import './Skills.css'
-import data from "../../data/index.json"
+import './Skills.css';
+import skillsData from "../../data/skillsData.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faCss3, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 const iconMap = {
   faReact: faReact,
@@ -12,13 +13,27 @@ const iconMap = {
 
 const Skills = () => {
   return (
-    <section className="skills" id="skills">
+    <motion.section 
+    className="skills section" 
+    id="skills"
+    initial={{ opacity: 0 }}
+    whileInView={{ 
+      opacity: 1, 
+      scale: 1.05,
+      transition: { duration: 2 },
+    }}
+    viewport= {{ 
+      once: true,
+      amount: "0.5" 
+  }}
+    
+  >
       <div className="skills__header">
-        <p className="subtitle">In development</p>
+        <p className="subtitle">Developing</p>
         <h2 className="title">Skills</h2>
       </div>
       <div className="skills__container">
-        {data?.skills?.map((item, index) => (
+        {skillsData?.skills?.map((item, index) => (
           <div key={index}
           className="skills__card">
             <div className="skills__icon">
@@ -31,8 +46,8 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
-  )
-}
+    </motion.section>
+  );
+};
 
-export default Skills
+export default Skills;

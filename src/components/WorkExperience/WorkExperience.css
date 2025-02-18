@@ -1,9 +1,3 @@
-.works {
-  color: #fff;
-  padding: 50px 20px;
-  text-align: center;
-}
-
 .works__list {
   padding-top: 25px;
   display: grid;
@@ -28,7 +22,6 @@
 
 .works__item-title {
   font-size: 22px;
-  color: #fff;
   margin-bottom: 10px;
 }
 
