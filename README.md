@@ -28,7 +28,7 @@ Para executar o projeto em ambiente local:
 
 1. **Clone este repositório**
    ```bash
-   git clone https://github.com/seu-usuario/portfolio-pessoal.git
+   git clone https://github.com/moraeseduarda/portfolio-pessoal.git
    ```
 
 2. **Acesse o diretório do projeto**
