@@ -34,12 +34,6 @@ textarea {
   padding: 20px;
 }
 
-@media (max-width: 768px) {
-  .section {
-    margin-bottom: 200px; /* Mais espaçamento no mobile */
-  }
-}
-
 .title {
   font-size: 4vw;
   background: var(--gradient-color);
@@ -54,10 +48,15 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .section {
+    margin-bottom: 80px;
+    min-height: 80vh;
+  }
   .title {
     font-size: 48px;
   }
 }
+
 @media (max-width: 480px) {
   body {
     width: 100%;
