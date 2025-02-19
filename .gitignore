@@ -23,9 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Diretórios e arquivos gerados pelo Node.js
-data/
-
 # Dependências
 node_modules/
 

@@ -1,0 +1,33 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "title": "React",
+      "description": "I have been focusing on improving my React skills, including hooks and state management.",
+      "icon": "faReact",
+      "color": "#61DAFB"
+    },
+    {
+      "id": "2",
+      "title": "Javascript",
+      "description": "I have been studying modern JavaScript (ES6+), including async, closures, and promises.",
+      "icon": "faJs",
+      "color": "#F7DF1E"
+    },
+    {
+      "id": "3",
+      "title": "CSS",
+      "description": "I have been focusing on enhancing my CSS knowledge, including Flexbox and Grid layout.",
+      "icon": "faCss3",
+      "color": "#2965F1"
+    },
+    {
+      "id": "4",
+      "title": "Python",
+      "description": "I have been focusing on using Python for data analysis with Pandas and NumPy.",
+      "icon": "faPython",
+      "color": "#fff"
+    }
+  ]
+}
+
