@@ -2,9 +2,6 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido como parte do desafio da trilha Dev da empresa júnior **Pixel** da UFSC. O objetivo do projeto é criar uma página pessoal com REACT.js.
 
-## 🔗 Demonstração
-
-
 ## 📌 Funcionalidades
 - **Cabeçalho com Navbar**: Nome/logotipo e links de navegação para seções da página.
 - **Seção Hero**: Foto, título profissional e uma breve descrição.
@@ -22,6 +19,7 @@ As principais tecnologias utilizadas no desenvolvimento do portfólio são:
 - **JavaScript**
 - **React.js**
 - **Vite (Node.js)** para o ambiente de desenvolvimento
+- Deploy com Netlify
 
 ## 🚀 Como Rodei Localmente
 Para executar o projeto em ambiente local:
